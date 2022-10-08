@@ -1,7 +1,7 @@
 <template>
-  <div class="left-chart-2">
-    <div class="lc2-header">李四收费站</div>
-    <div class="lc2-details">设备运行总数<span>245</span></div>
+  <div class="left-chart-1">
+    <div class="lc1-header">监控设备2</div>
+    <div class="lc1-details">生长状态值<span>245</span></div>
     <dv-charts class="lc2-chart" :option="option" />
     <dv-decoration-2 style="height:10px;" />
   </div>
@@ -17,10 +17,10 @@ export default {
           {
             type: 'pie',
             data: [
-              { name: '收费系统', value: 93 },
-              { name: '通信系统', value: 32 },
-              { name: '监控系统', value: 65 },
-              { name: '供配电系统', value: 44 },
+              { name: '温度', value: 93 },
+              { name: '湿度', value: 32 },
+              { name: '光照', value: 65 },
+              { name: '养料', value: 44 },
               { name: '其他', value: 52 }
             ],
             radius: ['45%', '65%'],

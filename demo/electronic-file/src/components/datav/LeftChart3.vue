@@ -1,7 +1,7 @@
 <template>
-  <div class="left-chart-3">
-    <div class="lc3-header">王五收费站</div>
-    <div class="lc3-details">设备运行总数<span>245</span></div>
+  <div class="left-chart-1">
+    <div class="lc1-header">监控设备5</div>
+    <div class="lc1-details">生长状态值<span>205</span></div>
     <dv-capsule-chart class="lc3-chart" :config="config" />
   </div>
 </template>
@@ -18,19 +18,19 @@ export default {
             value: 78
           },
           {
-            name: '通信系统',
+            name: '温度',
             value: 54
           },
           {
-            name: '监控系统',
+            name: '湿度',
             value: 123
           },
           {
-            name: '供配电系统',
+            name: '光照',
             value: 167
           },
           {
-            name: '其他',
+            name: '养料',
             value: 77
           }
         ],

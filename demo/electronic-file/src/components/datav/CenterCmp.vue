@@ -2,12 +2,12 @@
   <div class="center-cmp">
     <div class="cc-header">
       <dv-decoration-1 style="width:200px;height:50px;" />
-      <div>机电设备总数</div>
+      <div>监控设备总览</div>
       <dv-decoration-1 style="width:200px;height:50px;" />
     </div>
 
     <div class="cc-details">
-      <div>设备总数</div>
+      <div>监控设备数</div>
       <div class="card">2</div>
       <div class="card">1</div>
       <div class="card">3</div>
@@ -17,10 +17,10 @@
     <div class="cc-main-container">
       <div class="ccmc-left">
         <div class="station-info">
-          收费站<span>1315</span>
+          大棚数<span>1315</span>
         </div>
         <div class="station-info">
-          监控中心<span>415</span>
+          养殖基地<span>415</span>
         </div>
       </div>
 
@@ -28,10 +28,10 @@
 
       <div class="ccmc-right">
         <div class="station-info">
-          <span>90</span>道路外场
+          <span>90</span>仓库
         </div>
         <div class="station-info">
-          <span>317</span>其他
+          <span>317</span>销售中心
         </div>
       </div>
 
@@ -53,19 +53,19 @@ export default {
       config: {
         data: [
           {
-            name: '收费站',
+            name: '大棚数',
             value: 1315
           },
           {
-            name: '监控中心',
+            name: '养殖基地',
             value: 415
           },
           {
-            name: '道路外场',
+            name: '仓库',
             value: 90
           },
           {
-            name: '其他',
+            name: '销售中心',
             value: 317
           }
         ],
@@ -76,7 +76,7 @@ export default {
       },
 
       labelConfig: {
-        data: ['收费站', '监控中心', '道路外场', '其他']
+        data: ['大棚数', '养殖基地', '仓库', '销售中心']
       }
     }
   }
@@ -101,10 +101,10 @@ export default {
   }
 
   .cc-details {
-    height: 120px;
+    height: 100px;
     display: flex;
     justify-content: center;
-    font-size: 32px;
+    font-size: 28px;
     align-items: center;
 
     .card {
@@ -174,7 +174,7 @@ export default {
     position: absolute;
     width: 500px;
     height: 30px;
-    bottom: 10px;
+    bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
   }

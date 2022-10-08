@@ -1,14 +1,14 @@
 <template>
   <div class="bottom-charts">
     <div class="bc-chart-item">
-      <div class="bcci-header">赵钱收费站</div>
+      <div class="bcci-header">1号监控区</div>
       <dv-active-ring-chart :config="config1" />
       <Label-Tag :config="labelConfig" />
     </div>
     <dv-decoration-2 class="decoration-1" :reverse="true" style="width:5px;" />
 
     <div class="bc-chart-item">
-      <div class="bcci-header">孙李收费站</div>
+      <div class="bcci-header">2号监控区</div>
       <dv-active-ring-chart :config="config2" />
       <Label-Tag :config="labelConfig" />
     </div>
@@ -16,7 +16,7 @@
     <dv-decoration-2 class="decoration-2" :reverse="true" style="width:5px;" />
 
     <div class="bc-chart-item">
-      <div class="bcci-header">周吴收费站</div>
+      <div class="bcci-header">3号监控区</div>
       <dv-active-ring-chart :config="config3" />
       <Label-Tag :config="labelConfig" />
     </div>
@@ -24,7 +24,7 @@
     <dv-decoration-2 class="decoration-3" :reverse="true" style="width:5px;" />
 
     <div class="bc-chart-item">
-      <div class="bcci-header">郑王收费站</div>
+      <div class="bcci-header">4号监控区</div>
       <dv-active-ring-chart :config="config4" />
       <Label-Tag :config="labelConfig" />
     </div>
@@ -45,15 +45,15 @@ export default {
       config1: {
         data: [
           {
-            name: '收费站',
+            name: '温度',
             value: 356
           },
           {
-            name: '监控中心',
+            name: '湿度',
             value: 215
           },
           {
-            name: '道路外场',
+            name: '光照',
             value: 90
           },
           {
@@ -69,15 +69,15 @@ export default {
       config2: {
         data: [
           {
-            name: '收费站',
+            name: '温度',
             value: 615
           },
           {
-            name: '监控中心',
+            name: '湿度',
             value: 322
           },
           {
-            name: '道路外场',
+            name: '光照',
             value: 198
           },
           {
@@ -93,15 +93,15 @@ export default {
       config3: {
         data: [
           {
-            name: '收费站',
+            name: '温度',
             value: 452
           },
           {
-            name: '监控中心',
+            name: '湿度',
             value: 512
           },
           {
-            name: '道路外场',
+            name: '光照',
             value: 333
           },
           {
@@ -117,15 +117,15 @@ export default {
       config4: {
         data: [
           {
-            name: '收费站',
+            name: '温度',
             value: 156
           },
           {
-            name: '监控中心',
+            name: '湿度',
             value: 415
           },
           {
-            name: '道路外场',
+            name: '光照',
             value: 90
           },
           {
@@ -139,7 +139,7 @@ export default {
       },
 
       labelConfig: {
-        data: ['收费站', '监控中心', '道路外场', '其他']
+        data: ['温度', '湿度', '光照', '其他']
       }
     }
   }
@@ -156,23 +156,23 @@ export default {
   .bc-chart-item {
     width: 25%;
     height: 100%;
-    padding-top: 20px;
+    padding-top: 10px;
     box-sizing: border-box;
   }
 
   .bcci-header {
-    height: 50px;
+    height: 20px;
     text-align: center;
     line-height: 50px;
     font-size: 20px;
   }
 
   .dv-active-ring-chart {
-    height: calc(~"100% - 80px");
+    height: calc(~"100% - 110px");
   }
 
   .label-tag {
-    height: 30px;
+    height: 20px;
   }
 
   .active-ring-name {

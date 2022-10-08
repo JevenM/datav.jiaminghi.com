@@ -1,7 +1,7 @@
 <template>
   <div class="left-chart-1">
-    <div class="lc1-header">张三收费站</div>
-    <div class="lc1-details">设备运行总数<span>430</span></div>
+    <div class="lc1-header">监控设备1</div>
+    <div class="lc1-details">生长状态值<span>430</span></div>
     <dv-capsule-chart class="lc1-chart" :config="config" />
     <dv-decoration-2 style="height:10px;" />
   </div>
@@ -15,19 +15,19 @@ export default {
       config: {
         data: [
           {
-            name: '收费系统',
+            name: '温度',
             value: 167
           },
           {
-            name: '通信系统',
+            name: '湿度',
             value: 67
           },
           {
-            name: '监控系统',
+            name: '光照',
             value: 123
           },
           {
-            name: '供配电系统',
+            name: '养料',
             value: 55
           },
           {
@@ -36,7 +36,7 @@ export default {
           }
         ],
         colors: ['#00baff', '#3de7c9', '#fff', '#ffc530', '#469f4b'],
-        unit: '件'
+        unit: '百分比'
       }
     }
   }
@@ -53,7 +53,7 @@ export default {
 
   .lc1-header {
     text-align: center;
-    height: 40px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,7 +62,7 @@ export default {
   }
 
   .lc1-details {
-    height: 50px;
+    height: 30px;
     font-size: 16px;
     display: flex;
     align-items: center;

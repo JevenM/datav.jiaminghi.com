@@ -2,8 +2,11 @@
   <div id="data-view">
     <dv-full-screen-container>
       <div class="main-header">
-        <div class="mh-left">技术支持:<a href="https://github.com/jiaming743/DataV">https://github.com/jiaming743/DataV</a></div>
-        <div class="mh-middle">机电设备电子档案</div>
+        <div class="mh-left">技术支持:
+          西安电子科技大学
+          <!-- <a href="https://github.com/jiaming743/DataV">https://github.com/jiaming743/DataV</a> -->
+        </div>
+        <div class="mh-middle">木耳大数据监控平台</div>
         <div class="mh-right">
           <dv-border-box-2
             style="width: 120px; height: 50px; line-height: 50px; text-align:center;margin-left:200px;"
@@ -102,7 +105,7 @@ export default {
   }
 
   .main-header {
-    height: 80px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -129,7 +132,7 @@ export default {
     height: calc(~"100% - 80px");
 
     .border-box-content {
-      padding: 20px;
+      padding: 10px;
       box-sizing: border-box;
       display: flex;
     }
@@ -152,7 +155,7 @@ export default {
   }
 
   .rmc-top-container {
-    height: 65%;
+    height: 60%;
     display: flex;
   }
 

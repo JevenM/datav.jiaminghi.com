@@ -1,11 +1,11 @@
 <template>
   <div class="right-chart-2">
-    <div class="rc1-header">孙七收费站</div>
+    <div class="rc1-header">监控设备4</div>
 
     <div class="rc1-chart-container">
       <div class="left">
         <div class="number">267</div>
-        <div>设备运行总数</div>
+        <div>生长状态值</div>
       </div>
 
       <dv-charts class="right" :option="option" />
@@ -23,10 +23,10 @@ export default {
           {
             type: 'pie',
             data: [
-              { name: '收费系统', value: 93 },
-              { name: '通信系统', value: 66 },
-              { name: '监控系统', value: 52 },
-              { name: '供配电系统', value: 34 },
+              { name: '温度', value: 93 },
+              { name: '湿度', value: 66 },
+              { name: '光照', value: 52 },
+              { name: '养料', value: 34 },
               { name: '其他', value: 22 }
             ],
             radius: ['45%', '65%'],

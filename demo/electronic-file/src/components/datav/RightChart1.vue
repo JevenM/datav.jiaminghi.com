@@ -1,11 +1,11 @@
 <template>
   <div class="right-chart-1">
-    <div class="rc1-header">赵六收费站</div>
+    <div class="rc1-header">监控设备3</div>
 
     <div class="rc1-chart-container">
       <div class="left">
         <div class="number">262</div>
-        <div>设备运行总数</div>
+        <div>生长状态值</div>
       </div>
 
       <dv-capsule-chart class="right" :config="config" />
@@ -21,19 +21,19 @@ export default {
       config: {
         data: [
           {
-            name: '收费系统',
+            name: '光照',
             value: 25
           },
           {
-            name: '通信系统',
+            name: '温度',
             value: 66
           },
           {
-            name: '监控系统',
+            name: '湿度',
             value: 123
           },
           {
-            name: '供配电系统',
+            name: '养料',
             value: 72
           },
           {
@@ -41,7 +41,7 @@ export default {
             value: 99
           }
         ],
-        unit: '件'
+        unit: '百分比'
       }
     }
   }
