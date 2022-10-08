@@ -1,10 +1,10 @@
 <template>
   <div id="water-level-chart">
-    <div class="water-level-chart-title">计划资金累计完成情况</div>
+    <div class="water-level-chart-title">本批次木耳生长完成度</div>
 
-    <div class="water-level-chart-details">
+    <!-- <div class="water-level-chart-details">
       累计完成<span>235,680</span>元
-    </div>
+    </div> -->
 
     <div class="chart-container">
       <dv-water-level-pond :config="config" />

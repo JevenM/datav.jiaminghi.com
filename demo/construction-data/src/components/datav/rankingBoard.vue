@@ -1,6 +1,6 @@
 <template>
   <div id="ranking-board">
-    <div class="ranking-board-title">巡查上报记录数量</div>
+    <div class="ranking-board-title">生产数量排名</div>
     <dv-scroll-ranking-board :config="config" />
   </div>
 </template>
@@ -13,39 +13,39 @@ export default {
       config: {
         data: [
           {
-            name: '日常养护',
+            name: '基地1',
             value: 55
           },
           {
-            name: '交通事故',
+            name: '基地2',
             value: 120
           },
           {
-            name: '路面',
+            name: '基地3',
             value: 78
           },
           {
-            name: '桥通',
+            name: '基地4',
             value: 66
           },
           {
-            name: '计日工',
+            name: '基地5',
             value: 80
           },
           {
-            name: '路基',
+            name: '基地6',
             value: 45
           },
           {
-            name: '交安设施',
+            name: '基地7',
             value: 29
           },
           {
-            name: '除雪',
+            name: '基地8',
             value: 29
           },
           {
-            name: '绿化',
+            name: '基地9',
             value: 29
           }
         ],

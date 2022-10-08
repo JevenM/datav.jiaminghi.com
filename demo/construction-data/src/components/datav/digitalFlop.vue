@@ -33,7 +33,7 @@ export default {
 
       this.digitalFlopData = [
         {
-          title: '管养里程',
+          title: '总监控数',
           number: {
             number: [randomExtend(20000, 30000)],
             content: '{nt}',
@@ -43,10 +43,10 @@ export default {
               fontWeight: 'bold'
             }
           },
-          unit: '公里'
+          unit: '个'
         },
         {
-          title: '桥梁',
+          title: '养殖基地',
           number: {
             number: [randomExtend(20, 30)],
             content: '{nt}',
@@ -59,7 +59,7 @@ export default {
           unit: '座'
         },
         {
-          title: '涵洞隧道',
+          title: '加工基地',
           number: {
             number: [randomExtend(20, 30)],
             content: '{nt}',
@@ -72,7 +72,7 @@ export default {
           unit: '个'
         },
         {
-          title: '匝道',
+          title: '生产基地',
           number: {
             number: [randomExtend(10, 20)],
             content: '{nt}',
@@ -82,10 +82,10 @@ export default {
               fontWeight: 'bold'
             }
           },
-          unit: '个'
+          unit: '座'
         },
         {
-          title: '隧道',
+          title: '存储仓库',
           number: {
             number: [randomExtend(5, 10)],
             content: '{nt}',
@@ -111,7 +111,7 @@ export default {
           unit: '个'
         },
         {
-          title: '收费站',
+          title: '参与县区',
           number: {
             number: [randomExtend(5, 10)],
             content: '{nt}',
@@ -124,7 +124,7 @@ export default {
           unit: '个'
         },
         {
-          title: '超限站',
+          title: '电商中心',
           number: {
             number: [randomExtend(5, 10)],
             content: '{nt}',
@@ -137,7 +137,7 @@ export default {
           unit: '个'
         },
         {
-          title: '停车区',
+          title: '销售中心',
           number: {
             number: [randomExtend(5, 10)],
             content: '{nt}',
